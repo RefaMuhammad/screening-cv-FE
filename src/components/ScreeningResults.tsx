@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Gate1Result, Gate1Criteria } from '../types';
 import { CheckCircle2, XCircle, AlertTriangle, ChevronRight, FileText } from 'lucide-react';
 

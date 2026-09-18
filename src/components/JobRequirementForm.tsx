@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { JobRequirement, SkillReq } from '../types';
 import { polishRoleDescription } from '../services/api';
 import { Wand2, Plus, Minus, Check, X } from 'lucide-react';
@@ -17,7 +17,7 @@ export default function JobRequirementForm({ onChange }: Props) {
   const [maxSalary, setMaxSalary] = useState(8200);
 
   const [minExp, setMinExp] = useState(5);
-  const [language, setLanguage] = useState('English');
+  const [language] = useState('English');
   const [langLevel, setLangLevel] = useState('C1');
   const [visaSponsorship, setVisaSponsorship] = useState(true);
   const [visaReq, setVisaReq] = useState('Eligible for UAE employment visa');
