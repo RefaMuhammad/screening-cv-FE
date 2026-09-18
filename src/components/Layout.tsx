@@ -15,7 +15,7 @@ export default function Layout({ children, ocrStatus }: { children: React.ReactN
             {ocrStatus && (
               <span className={`px-2 py-1 rounded-full ${ocrStatus.available ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'} flex items-center`}>
                 <Activity className="w-3 h-3 mr-1" />
-                OCR: {ocrStatus.device.toUpperCase()}
+                OCR: {ocrStatus.device?.toUpperCase() || 'OFF'}
               </span>
             )}
           </div>
