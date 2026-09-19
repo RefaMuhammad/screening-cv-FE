@@ -76,6 +76,7 @@ export default function ScreeningResults({ results }: { results: Gate1Result[] }
                 <div className="grid grid-cols-1 gap-4">
                   {(Object.keys(selectedResult.criteria) as Array<keyof Gate1Criteria>).map((key) => {
                     const crit = selectedResult.criteria[key];
+                    if (!crit) return null;
                     return (
                       <div key={key} className="border rounded-lg p-4 bg-gray-50 flex items-start space-x-4">
                         <div className="mt-1">{getStatusIcon(crit.status)}</div>

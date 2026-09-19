@@ -56,6 +56,7 @@ export interface Gate1Criteria {
   skills: CriteriaResult;
   language: CriteriaResult;
   visa: CriteriaResult;
+  role_alignment?: CriteriaResult;
 }
 
 export interface Gate1Result {
