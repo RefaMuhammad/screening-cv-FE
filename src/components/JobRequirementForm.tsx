@@ -166,12 +166,19 @@ Primary Responsibilities:
             </div>
             <div className="flex-1">
               <label className="block text-sm font-medium text-gray-700">Primary Language Benchmark</label>
-              <select value={langLevel} onChange={e=>setLangLevel(e.target.value)} className="mt-1 block w-full rounded-md border p-2 bg-white">
-                <option value="B1">English - Intermediate</option>
-                <option value="B2">English - Upper Intermediate</option>
-                <option value="C1">English - C1 (Advanced)</option>
-                <option value="C2">English - C2 (Fluent)</option>
-              </select>
+                <select
+                  value={langLevel}
+                  onChange={(e) => setLangLevel(e.target.value)}
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 sm:text-sm"
+                >
+                  <option value="A1">A1 (Beginner)</option>
+                  <option value="A2">A2 (Elementary)</option>
+                  <option value="B1">B1 (Intermediate / IELTS 4.0-5.0)</option>
+                  <option value="B2">B2 (Upper Intermediate / IELTS 5.5-6.5)</option>
+                  <option value="C1">C1 (Advanced / IELTS 7.0-8.0 / TOEFL 95+)</option>
+                  <option value="C2">C2 (Proficient / IELTS 8.5+)</option>
+                  <option value="Native">Native Speaker</option>
+                </select>
             </div>
           </div>
 
